@@ -1,14 +1,12 @@
-import { useMemo } from "react";
+import { FC, useMemo } from "react";
 import PaginatorButton from "./PaginatorButton";
-import s from '../css/paginator.module.css'
+import s from "../css/paginator.module.css";
 
-type Props = {
-  activePage: any;
+const Paginator: FC<{
+  activePage: number;
   updatePage: Function;
-  pagesCount: any;
-};
-
-const Paginator = (props: Props) => {
+  pagesCount: number;
+}> = props => {
   const { activePage, updatePage, pagesCount } = props;
   const pagesArray = useMemo(
     () => Array.from({ length: pagesCount }, (_, i) => i + 1),

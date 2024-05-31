@@ -11,10 +11,9 @@ import { IUser } from "../Types/IUser";
 import { checkIfLogged } from "../Utils/checkiflogged";
 
 const PAGE_SIZE = 6;
-
 axios.defaults.baseURL = "https://reqres.in/api";
 
-const UserList: FC = ({ onAmountChange }: any) => {
+const UserList: FC<{ onAmountChange: Function }> = ({ onAmountChange }) => {
   const [users, setUsers] = useState<IUser[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [filter, setFilters] = useState<IFilter>({
@@ -136,7 +135,7 @@ const UserList: FC = ({ onAmountChange }: any) => {
           updatePage={(button: number) => {
             updateFilter("page", button);
           }}
-          pagesCount={Math.ceil(users.length / PAGE_SIZE)}></Paginator>
+          pagesCount={pagesCount}></Paginator>
       )}
     </>
   );

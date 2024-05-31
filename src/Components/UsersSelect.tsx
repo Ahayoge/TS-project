@@ -19,11 +19,10 @@ const UsersSelect: FC<FilterSelectProps> = (props: any) => {
       value={activeSorting}
       onChange={e => {
         updateSorting(e.target.value);
-      }}
-      id="">
+      }}>
       {filterType == "filter" && <option disabled value="">Выберите фильтр...</option>}
       {options.map((option: any) => (
-        <option key={option.value}>{option.name}</option>
+        <option key={option.value} value={option.value}>{option.name}</option>
       ))}
     </select>
   );

@@ -1,0 +1,41 @@
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1860px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.userinfo {
+  margin: auto;
+  padding: 30px;
+  background-color: #222831;
+  border-radius: 30px;
+}
+
+.content__wrap {
+  gap: 30px;
+}
+
+.text__column {
+  flex-direction: column;
+}
+
+.title {
+  color: #fefefe;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.avatar {
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+a {
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: block;
+}

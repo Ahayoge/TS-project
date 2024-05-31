@@ -1,4 +1,6 @@
-export const EmailSelect = () => {
+import { FC } from "react";
+
+export const EmailSelect: FC = () => {
   return (
     <>
       <option value="george.bluth@reqres.in">george.bluth@reqres.in</option>
