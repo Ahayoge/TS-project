@@ -1,6 +1,6 @@
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import "../css/usercard.css";
+import "../css/usercard.module.css";
 
 const CardSkeleton = ({ cards }: any) => {
   return Array(cards)

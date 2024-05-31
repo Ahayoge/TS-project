@@ -6,6 +6,7 @@ import { getFromStorage } from "../Utils/localstorage";
 import s from "../css/singleuserpage.module.css";
 import Button from "../Components/Buttons";
 import Modal from "../Components/Modal";
+import loader from '../Img/tube-spinner.svg'
 
 axios.defaults.baseURL = "https://reqres.in/api";
 
@@ -29,13 +30,15 @@ const UserPage: FC = () => {
     }
   }, [id]);
 
-  if (!user) return <h3>Загрузка...</h3>;
+  if (!user) return <div className={`${s.container} flex`}>
+    <img className={s.loader} src={loader} alt="" />
+  </div>;
   return (
     <div className={`${s.container} flex`}>
-      {id && <Modal isOpen={isOpen} close = {toggleModal} userId={id} setUser={setUser}/>}
+      {id && <Modal isOpen={isOpen} close={toggleModal} userId={id} setUser={setUser} />}
 
       <div className={s.userinfo}>
-        <Link to={'/users'}>← Вернуться назад</Link>
+        <Link to={"/users"}>← Вернуться назад</Link>
         <div className={`${s.content__wrap} flex`}>
           <img
             className={s.avatar}

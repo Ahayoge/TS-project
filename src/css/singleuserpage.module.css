@@ -39,3 +39,9 @@ a {
   margin-bottom: 10px;
   display: block;
 }
+
+.loader {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}

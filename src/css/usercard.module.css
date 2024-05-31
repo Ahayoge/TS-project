@@ -9,7 +9,7 @@
   min-height: 200px;
 }
 
-.user__content-area button {
+.user__content button {
   width: fit-content;
   margin-top: auto;
 }
@@ -20,7 +20,7 @@
   box-shadow: none;
 }
 
-.user__content-area {
+.user__content {
   width: 100%;
   padding: 20px;
   flex-direction: column;
