@@ -1,0 +1,13 @@
+.title {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.container {
+  flex-direction: column;
+  height: calc(100% - 70px);
+  width: 100%;
+  max-width: 1860px;
+  margin: 0 auto;
+  padding: 30px;
+}

@@ -1,0 +1,10 @@
+.input {
+  padding: 15px;
+  flex-basis: calc((100% - 40px) / 3);
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #222831;
+  color: #efefef;
+  margin-bottom: 15px;
+  min-height: 60px;
+}

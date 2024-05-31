@@ -1,0 +1,27 @@
+body {
+  background-color: #393E46;
+}
+
+.flex {
+  display: flex;
+}
+
+#root, body, main {
+  height: 100%;
+}
+
+.container {
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1880px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+button {
+  border: 1px black solid;
+  font-size: 20px;
+  padding: 15px;
+}

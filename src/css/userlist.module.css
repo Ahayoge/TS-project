@@ -1,0 +1,19 @@
+.user__list {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.input {
+  padding: 15px;
+  width: calc((100% - 40px) / 3);
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #222831;
+  color: #efefef;
+  margin-bottom: 15px;
+}
+
+.top__section {
+  width: 100%;
+  gap: 20px;
+}

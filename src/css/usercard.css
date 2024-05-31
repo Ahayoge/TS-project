@@ -1,0 +1,46 @@
+.user__card {
+  list-style: none;
+  border-radius: 20px;
+  width: calc((100% - 40px) / 3);
+  min-width: 450px;
+  background-color: #222831;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  line-height: 1;
+  min-height: 200px;
+}
+
+.user__content-area button {
+  width: fit-content;
+  margin-top: auto;
+}
+
+.user__skeleton {
+  background-color: transparent;
+  border: 2px #303030 solid;
+  box-shadow: none;
+}
+
+.user__content-area {
+  width: 100%;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.user__avatar {
+  border-radius: 20px 0 0 20px;
+  width: 180px;
+  max-height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.user__name {
+  font-size: 32px;
+  color: #efefef;
+  margin-bottom: 5px;
+}
+
+.user__email {
+  font-size: 20px;
+  color: #efefef;
+}

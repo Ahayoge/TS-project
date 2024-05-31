@@ -1,0 +1,16 @@
+.btn_reset {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #222831;
+  background-color: #00d8e2;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: .2s box-shadow ease-in-out;
+}
+
+.btn_reset:hover {
+  box-shadow: 0px 0px 20px 0px #00d7e2b2;
+}
