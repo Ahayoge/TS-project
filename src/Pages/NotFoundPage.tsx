@@ -1,8 +1,9 @@
 import s from "../css/notfoundpage.module.css";
 import Button from "../Components/Buttons";
 import { useNavigate } from "react-router-dom";
+import { FC } from "react";
 
-const NotFoundPage = () => {
+const NotFoundPage: FC = () => {
   const navigate = useNavigate();
   return (
     <div className={`${s.container} flex`}>

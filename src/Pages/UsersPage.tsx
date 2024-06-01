@@ -1,11 +1,11 @@
 import s from "../css/userspage.module.css";
 import UserList from "../Components/UserList";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { IUser } from "../Types/IUser";
 import Header from "../Components/Header";
 import { checkIfLogged } from "../Utils/checkiflogged";
 
-const UsersPage = () => {
+const UsersPage: FC = () => {
   // Проверяем, залогинен ли юзер. Если нет, то возвращаем на страницу логина/регистрации
   checkIfLogged();
   const [users, setUsers] = useState<IUser[]>([]);

@@ -10,7 +10,7 @@ type FilterSelectProps = {
   filterType: "filter" | "searching";
 };
 
-const UsersSelect: FC<FilterSelectProps> = (props: any) => {
+const UsersSelect: FC<FilterSelectProps> = (props) => {
 
   const { options, updateSorting, activeSorting, filterType } = props;
   return (
@@ -21,7 +21,7 @@ const UsersSelect: FC<FilterSelectProps> = (props: any) => {
         updateSorting(e.target.value);
       }}>
       {filterType == "filter" && <option disabled value="">Выберите фильтр...</option>}
-      {options.map((option: any) => (
+      {options.map((option: IOption) => (
         <option key={option.value} value={option.value}>{option.name}</option>
       ))}
     </select>

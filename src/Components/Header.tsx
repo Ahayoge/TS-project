@@ -3,8 +3,9 @@ import { removeFromStorage } from "../Utils/localstorage";
 import Button from "./Buttons";
 import s from "../css/header.module.css";
 import { getFromStorage } from "../Utils/localstorage";
+import { FC } from "react";
 
-const Header = () => {
+const Header: FC = () => {
   const navigate = useNavigate();
   const logout = () => {
     removeFromStorage("isLogged");

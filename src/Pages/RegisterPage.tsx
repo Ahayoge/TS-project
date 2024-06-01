@@ -1,5 +1,5 @@
 import { addToStorage } from "../Utils/localstorage";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { checkIfAlreadyRegistered } from "../Utils/checkiflogged";
 import { EmailSelect } from "../Components/EmailSelect";
@@ -14,7 +14,7 @@ interface NewUser extends IUser {
   token: string;
 }
 
-const RegisterPage = () => {
+const RegisterPage: FC = () => {
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState<string>("Леонардо");
   const [lastName, setLastName] = useState<string>("Ди Каприо");

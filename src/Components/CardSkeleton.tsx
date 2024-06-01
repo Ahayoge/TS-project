@@ -1,8 +1,9 @@
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "../css/usercard.module.css";
+import { FC } from "react";
 
-const CardSkeleton = ({ cards }: any) => {
+const CardSkeleton: FC<{cards: number}> = ({ cards }) => {
   return Array(cards)
     .fill(0)
     .map((_, id) => (

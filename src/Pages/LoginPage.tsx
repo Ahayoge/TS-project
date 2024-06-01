@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import axios from "axios";
 import s from "../css/registerpage.module.css";
 import Button from "../Components/Buttons";
@@ -9,7 +9,7 @@ import { EmailSelect } from "../Components/EmailSelect";
 
 axios.defaults.baseURL = "https://reqres.in/api";
 
-const LoginPage = () => {
+const LoginPage: FC = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState<string>("george.bluth@reqres.in");
   const [password, setPassword] = useState<string>();
